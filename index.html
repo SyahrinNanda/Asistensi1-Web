@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Pendaftaran Kependudukan</title>
   </head>
-  <body oncontextmenu="return false;">
+  <body>
     <h1 align="center">Form Pendaftaran Kependudukan</h1>
     <form>
       <fieldset
@@ -155,6 +155,10 @@
         }
         // Menonaktifkan Ctrl + Shift + I
         if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+          e.preventDefault();
+        }
+        // Menonaktifkan Ctrl + U
+        if (e.ctrlKey && e.keyCode === 85) {
           e.preventDefault();
         }
       });
