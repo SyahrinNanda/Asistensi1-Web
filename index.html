@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Pendaftaran Kependudukan</title>
   </head>
-  <body>
+  <body oncontextmenu="return false;">
     <h1 align="center">Form Pendaftaran Kependudukan</h1>
     <form>
       <fieldset
@@ -146,5 +146,18 @@
         </div>
       </fieldset>
     </form>
+
+    <script>
+      document.addEventListener("keydown", function (e) {
+        // Menonaktifkan F12
+        if (e.keyCode === 123) {
+          e.preventDefault();
+        }
+        // Menonaktifkan Ctrl + Shift + I
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+          e.preventDefault();
+        }
+      });
+    </script>
   </body>
 </html>
