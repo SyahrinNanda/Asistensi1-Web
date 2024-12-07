@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Kependudukan</title>
+  </head>
+  <body>
+    <h1 align="center">Form Pendaftaran Kependudukan</h1>
+    <form>
+      <fieldset
+        style="
+          border: 2px solid #ddd;
+          padding: 20px;
+          width: 70%;
+          margin: 0 auto;
+        "
+      >
+        <table cellpadding="10" align="center" width="100%">
+          <tr>
+            <td width="30%"><label for="nama">Nama Lengkap:</label></td>
+            <td>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan nama lengkap"
+                required
+                style="
+                  width: 100%;
+                  padding: 5px;
+                  border-radius: 5px;
+                  border: 1px solid #ccc;
+                "
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="nik">NIK (Nomor Induk Kependudukan):</label></td>
+            <td>
+              <input
+                type="text"
+                id="nik"
+                name="nik"
+                maxlength="16"
+                placeholder="Masukkan NIK"
+                required
+                style="
+                  width: 100%;
+                  padding: 5px;
+                  border-radius: 5px;
+                  border: 1px solid #ccc;
+                "
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="jenis_kelamin">Jenis Kelamin:</label></td>
+            <td>
+              <select
+                id="jenis_kelamin"
+                name="jenis_kelamin"
+                required
+                style="
+                  width: 100%;
+                  padding: 5px;
+                  border-radius: 5px;
+                  border: 1px solid #ccc;
+                "
+              >
+                <option value="">Pilih</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tanggal_lahir">Tanggal Lahir:</label></td>
+            <td>
+              <input
+                type="date"
+                id="tanggal_lahir"
+                name="tanggal_lahir"
+                required
+                style="
+                  width: 100%;
+                  padding: 5px;
+                  border-radius: 5px;
+                  border: 1px solid #ccc;
+                "
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat:</label></td>
+            <td>
+              <textarea
+                id="alamat"
+                name="alamat"
+                rows="3"
+                placeholder="Masukkan alamat"
+                required
+                style="
+                  width: 100%;
+                  padding: 5px;
+                  border-radius: 5px;
+                  border: 1px solid #ccc;
+                "
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="telepon">Nomor Telepon:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="telepon"
+                name="telepon"
+                placeholder="Masukkan nomor telepon"
+                required
+                style="
+                  width: 100%;
+                  padding: 5px;
+                  border-radius: 5px;
+                  border: 1px solid #ccc;
+                "
+              />
+            </td>
+          </tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 20px">
+          <button
+            type="submit"
+            style="
+              padding: 10px 20px;
+              background-color: #4caf50;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Daftar
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
